@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/SelectLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageButton
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:src="@drawable/ic_videoview_add" />
+
+        <ListView
+            android:id="@+id/listitem"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/btn_add"
+            android:layout_weight="1"
+            android:drawSelectorOnTop="false"
+            android:gravity="center_vertical|left" >
+        </ListView>
+    </RelativeLayout>
+
+    <AbsoluteLayout
+         android:id="@+id/Por"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <SurfaceView
+            android:id="@+id/PorView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </AbsoluteLayout>
+
+    <RelativeLayout
+        android:id="@+id/MainLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:id="@+id/OutputImageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/customeLayout"
+            android:layout_width="400px"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:id="@+id/bandlevelLayout"
+            android:layout_width="400px"
+            android:layout_height="400px"
+            android:layout_toRightOf="@+id/customeLayout"
+            android:orientation="vertical" />
+            
+
+
+        <RelativeLayout
+            android:id="@+id/top1"
+            android:layout_width="wrap_content"
+            android:layout_height="240px" >
+
+            <TextView
+                android:id="@+id/cpuinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10px"
+                android:paddingLeft="20px"
+                android:textColor="@color/white"
+                android:textSize="20px"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/metadata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/cpuinfo"
+                android:layout_marginTop="10px"
+                android:paddingLeft="20px"
+                android:textColor="@color/white"
+                android:textSize="20px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/videometadata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/metadata"
+                android:layout_marginTop="10px"
+                android:paddingLeft="20px"
+                android:textColor="@color/white"
+                android:textSize="20px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/audiometadata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/videometadata"
+                android:layout_marginTop="10px"
+                android:paddingLeft="20px"
+                android:textColor="@color/white"
+                android:textSize="20px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/decodemetadata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/audiometadata"
+                android:layout_marginTop="8px"
+                android:paddingLeft="20px"
+                android:textColor="@color/white"
+                android:textSize="20px"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/buttom3"
+            android:layout_width="400px"
+            android:layout_height="400px"
+            android:layout_toRightOf="@+id/customeLayout"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10px"
+                android:background="#00000000"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:src="@drawable/ic_videoview_back" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bottoml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" >
+
+            <ImageButton
+                android:id="@+id/but_play_pausel"
+                android:layout_width="72dp"
+                android:layout_height="48dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_videoview_play"
+                android:focusable="true" />
+
+            <ImageButton
+                android:id="@+id/but_stop"
+                android:layout_width="72dp"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/but_play_pausel"
+                android:background="@drawable/ic_videoview_stop"
+                android:focusable="true" />
+
+            <CheckBox
+                android:id="@+id/cycle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:checked="false"
+                android:text="@string/check" />
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right|bottom"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/cycle"
+                android:layout_toRightOf="@+id/but_stop"
+                android:max="100"
+                android:maxHeight="12dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:progress="30"
+                android:progressDrawable="@drawable/progress"
+                android:secondaryProgress="0"
+                android:thumb="@drawable/sliding_bar" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bottom2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bottoml"
+            android:layout_gravity="bottom" >
+
+            <TextView
+                android:id="@+id/time1"
+                android:layout_width="200px"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="left"
+                android:paddingLeft="20px"
+                android:text="00:00:00"
+                android:textColor="@color/white"
+                android:textSize="22px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="100px"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="idle"
+                android:textColor="@color/white"
+                android:textSize="22px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bitrate"
+                android:layout_width="200px"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/status"
+                android:text="bits"
+                android:textColor="@color/white"
+                android:textSize="22px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/time2"
+                android:layout_width="200px"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                android:paddingRight="20px"
+                android:text="00:00:00"
+                android:textColor="@color/white"
+                android:textSize="22px"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <SeekBar
+            android:id="@+id/volumBar"
+            android:layout_width="240px"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bottom2"
+            android:layout_marginBottom="20px"
+            android:layout_marginRight="10px"
+            android:max="100"
+            android:maxHeight="6px"
+            android:paddingLeft="20px"
+            android:paddingRight="20px"
+            android:progress="50"
+            android:progressDrawable="@drawable/progress"
+            android:secondaryProgress="0"
+            android:thumb="@drawable/sliding_bar" />
+
+        <CheckBox
+            android:id="@+id/cbhardware"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_above="@+id/bottom2"
+            android:checked="true"
+            android:text="@string/hardware" />
+        
+        <ImageButton
+                android:id="@+id/but_speeddown"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/cbhardware"
+                android:background="@drawable/backward"
+                android:layout_above="@+id/bottom2"
+                android:contentDescription="speed down"
+                android:focusable="true" />
+
+        <ImageButton
+            android:id="@+id/but_speedup"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/but_speeddown"
+            android:background="@drawable/forward"
+            android:layout_above="@+id/bottom2"
+            android:contentDescription="speed up"
+            android:focusable="true" />
+
+
+    </RelativeLayout>
+
+</AbsoluteLayout>
