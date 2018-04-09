@@ -5,7 +5,9 @@
 杭州当虹科技股份有限公司的Android平台多媒体播放引擎v3.5版本SDK主要提供了本地音视频的播放和网络流媒体的播放功能，能够实现较低的性能开销达到较好播放体验。本参考文档将对该SDK的主要函数及使用进行详细的描述，以便开发者能够参考该文档进行快速的开发。本文档中提到的所有接口和定义都是针对java语言。
 ## 2.版权信息 ##
 当虹云Android播放SDK版权信息：[LICENSE](https://github.com/Arcloud/ArcMediaPlayer-Android/blob/master/LICENSE),
+
 当虹云提供的Android播放SDK可以用于商业应用，不会收取任何SDK使用费用。但基于当虹云Android播放SDK的其他商业服务，由服务提供商收取费用。
+
 ## 3.ArcMediaPlayer SDK特性 ##
 - 支持 RTMP 和 HLS 协议的直播流媒体播放
 - 支持首屏秒开
@@ -45,6 +47,7 @@
 
 ## 6.参考代码 ##
 Sample APP：[ArcPlayer](https://github.com/Arcloud/ArcMediaPlayer-Android/tree/master/sample/sampleplayer)
+
 Sample code中的ArcPlayerSample.java，是一个完整的简单播放应用，除了调用ArcMediaPlayer的播放接口实现播放逻辑之外，还牵涉到一些错误处理，界面元素状态转换和控制，Activity的消息监听和处理，控件和屏幕点击事件处理，整个测试程序是按照一个功能完整的普通播放器逻辑来实现的。
 
 ## 7.注意事项(权限，与其他SDK、第三方库的冲突等) ##
@@ -63,9 +66,9 @@ Sample code中的ArcPlayerSample.java，是一个完整的简单播放应用，�
 
 ## 8.接口说明 ##
 
-请查看doc目录下的[接口说明文档](https://github.com/Arcloud/ArcMediaPlayer-Android/doc)
+请查看doc目录下的[接口说明文档](https://github.com/Arcloud/ArcMediaPlayer-Android/tree/master/doc/)
 
-## 9.高级应用##
+## 9.高级应用 ##
 关于播放器的高级应用VR播放、VideoView控件等等，请查看[Wiki这里](https://github.com/Arcloud/ArcMediaPlayer-Android/wiki/%E9%AB%98%E7%BA%A7%E5%BA%94%E7%94%A8)
 
 ## 10.FAQ ##
